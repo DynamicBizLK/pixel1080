@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
 import bgImg from "../../public/bg.jpg";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,7 +24,9 @@ const Hero = () => {
           <p className="max-w-intro mx-auto text-lg sm:text-base sm:mt-4">
             We are specialized in digital art, photography, and graphic design, motivated by the goal to give cherished customers fantastic outcomes.
           </p>
-          <button className="mt-4 sm:mt-6 py-2 px-4 bg-orange-500 hover:bg-orange-600 text-white text-lg sm:text-base font-medium rounded-md">View Projects</button>
+          <Link href="#showcase">
+            <button className="mt-4 sm:mt-6 py-2 px-4 bg-orange-500 hover:bg-orange-600 text-white text-lg sm:text-base font-medium rounded-md">View Projects</button>
+          </Link>
         </div>
       </div>
     </section>
